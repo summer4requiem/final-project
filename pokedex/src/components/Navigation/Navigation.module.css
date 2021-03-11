@@ -1,0 +1,30 @@
+
+.navigation{
+    min-height: 56px;
+    background-color: #002a32;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5em 0 5em;
+    text-align: center;
+}
+.navigationLink{
+    color: #00d6d6;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+.navigationLink:hover{
+    color: #ffff;
+}
+
+@media only screen and (min-width: 600px) {
+    .navigation{
+        min-height: 56px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 4em 0 4em;
+    }
+  }
