@@ -1,11 +1,9 @@
-import {
-    PokemonProfileAPI
-} from "../API/API";
+import {PokemonProfileAPI} from "../API/API";
 const SET_PROFILE = "SET_PROFILE";
 
 export const setPokemonProfile = (profile) => ({
     type: SET_PROFILE,
-    profile,
+    profile: profile,
 });
 
 const initialState = {

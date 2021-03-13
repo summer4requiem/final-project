@@ -11,7 +11,7 @@ export const PokemonsApi = {
         });
     },
 
-    AllCaughtPokemons:() => {
+    AllCaughtPokemons: () => {
         return axiosInstance.get(`pokemons/?caught=true`);
     },
 
@@ -21,8 +21,8 @@ export const PokemonsApi = {
 }
 
 export const PokemonProfileAPI = {
-    getPokemonProfile: (id) => {
-        return axiosInstance.post(`pokemons/${ id }`).then(response => {
+    getPokemonProfile: (id= 1) => {
+        return axiosInstance.get(`pokemons/${ id }`).then(response => {
             return response;
         });
     },

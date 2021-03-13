@@ -5,7 +5,6 @@ class PokemonsApiComponent extends React.Component {
     componentDidMount = () => {
         let { currentPage, pageSize } = this.props;
         this.props.getPokemons(currentPage, pageSize);
-        this.props.getCaughtPokemons();
     }
 
     changePageOnClick = (currentPage) => {

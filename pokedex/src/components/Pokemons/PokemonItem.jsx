@@ -15,7 +15,7 @@ const PokemonItem = (props) => {
             <div>
                 <div className={s.pokemonItemName}>{props.name}</div>
                 <div>
-                    <NavLink to={`/pokemon/${props.id}`}>
+                    <NavLink to={`/profile/${props.id}`}>
                         <img src={process.env.PUBLIC_URL + `/pokemons/${props.id}.png`} alt={`pokemon${props.name}`} width={100} height={"auto"} />
                     </NavLink>
                 </div>

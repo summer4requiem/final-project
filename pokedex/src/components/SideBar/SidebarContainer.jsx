@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import Sidebar from "./Sidebar";
+import {getCaughtPokemons} from "../../Redux/pokemon-reducer";
 
 const mapStateToProps = (state)=>{
     return{
@@ -7,5 +8,4 @@ const mapStateToProps = (state)=>{
     }
 }
 
-
-export default connect(mapStateToProps, {})(Sidebar);
+export default connect(mapStateToProps, {getCaughtPokemons})(Sidebar);

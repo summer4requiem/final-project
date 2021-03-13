@@ -8,12 +8,15 @@ import { getProfile } from '../../Redux/profile-reducer';
 class ProfileContainer extends React.Component {
     componentDidMount() {
         let id = this.props.match.params.id;
+        if(!id){
+            id = 1;
+        }
         this.props.getProfile(id);
     }
 
     render() {
         return (
-            <Profile profile={this.props.profile} />
+            <Profile profile={this.props.profile}/>
         )
     }
 }

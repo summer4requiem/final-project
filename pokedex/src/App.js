@@ -14,7 +14,7 @@ function App() {
                 <div className="App">
                     <Navigation />
                     <Route
-                        path="/pokemon/:id?"
+                        path="/profile/:id?"
                         render={() => <ProfileContainer />}
                     />
                     <Route exact path="/" render={() => <PokemonsContainer />} />
