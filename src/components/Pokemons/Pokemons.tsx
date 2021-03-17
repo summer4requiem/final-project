@@ -10,7 +10,6 @@ type PropsTypes = {
     pokemons:  Array<PokemonTypes>,
     totalDataCount: number,
     pageSize: number,
-    // caughtPokemons: Array<PokemonTypes>,
     pickUpPokemon: (id: number, name: string, date: string) => void,
 }
 

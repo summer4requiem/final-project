@@ -3,7 +3,6 @@ import {ThunkAction} from "redux-thunk";
 import {PokemonsApi} from "../API/API";
 import {PokemonTypes} from "../types/pokemon-type";
 import {AppStateType} from "./redux-store";
-
 const SET_POKEMONS = "SET_POKEMONS";
 const SET_TOTAL_COUNT = "SET_TOTAL_COUNT";
 const SET_CURRENT_PAGE = "SET_CURRENT_PAGE"
