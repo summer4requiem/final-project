@@ -1,0 +1,78 @@
+.paginator {
+    display: flex;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    margin: 0 auto;
+    width: 280px;
+}
+
+.paginatorList {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+    padding: 0 0 0 23px;
+    font-size: 12px;
+}
+
+.paginatorListItem {
+    margin-right: 10px;
+}
+
+.activePage {
+    color: tomato;
+    font-weight: bold;
+    outline: 1px solid firebrick;
+    margin-right: 10px;
+}
+
+.paginateLeft {
+    border: solid #009688;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    left: 26px;
+    background-color: transparent;
+    top: 34px;
+    transform: rotate(
+            135deg
+    );
+}
+
+.paginateRight {
+    border: solid #009688;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    right: 34px;
+    top: 34px;
+    background-color: transparent;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 600px) {
+    .paginator {
+        width: 400px;
+    }
+
+    .paginateLeft {
+        border-width: 0 6px 6px 0;
+        top: 36px;
+        padding: 7px;
+    }
+
+    .paginateRight {
+        border-width: 0 6px 6px 0;
+        padding: 7px;
+        right: 94px;
+        top: 36px;
+    }
+
+    .paginatorList {
+        font-size: 18px;
+    }
+}
+
+

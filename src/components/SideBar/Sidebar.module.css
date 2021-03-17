@@ -1,0 +1,41 @@
+.caughtPokemonsList{
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.caughtPokemonsTitle{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.caughtPokemonsWrapper{
+    padding: 10px;
+    box-shadow: inset 0 0 10px #607d8b21;
+}
+.sideBarInfoName{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sideBarInfo{
+    display: flex;
+    flex-direction: column;
+}
+.sideBarInfoDate{
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+    .caughtPokemonsList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1150px) {
+    .caughtPokemonsList {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

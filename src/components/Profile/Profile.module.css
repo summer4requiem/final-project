@@ -1,0 +1,51 @@
+.profile{
+    background-color: beige;
+    height: 100vh;
+}
+.profileInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.profileTitle{
+    font-size: 40px;
+}
+.profileWrapper{
+    padding: 2em;
+    text-transform: uppercase;
+}
+
+.profileWrapper{
+    width: 200px;
+    margin: 0 auto;
+    color: #002a32;
+}
+.profileStatus{
+    font-weight: bold;
+}
+
+.profileImg{
+    width: 150px;
+    height: auto;
+}
+
+.profileName{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+    .profileImg{
+        width: 250px;
+    }
+    .profileWrapper{
+        width: 400px;
+    }
+  }
+
+  @media only screen and (min-width: 1250px) {
+    .profileWrapper{
+        width: 550px;
+    }
+  }
